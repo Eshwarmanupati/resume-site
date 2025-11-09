@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manupati Eshwar — Resume</title>
+  <style>
+    :root{--bg:#0b0c10;--panel:#0f1117;--ink:#e7e9ee;--muted:#9aa3b2;--accent:#7c3aed;--chip:#1b1f2a;}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui}
+    .wrap{max-width:980px;margin:0 auto;padding:32px 20px}
+    header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .avatar{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#22d3ee);display:grid;place-items:center;color:white;font-weight:700}
+    .id h1{font-size:clamp(24px,3.4vw,40px);margin:0}
+    .id p{margin:.25rem 0 0;color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{background:var(--chip);padding:6px 10px;border-radius:999px;font-size:12px;border:1px solid #222}
+    section{background:var(--panel);border:1px solid #1f2230;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .edu-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+    .edu-item{display:flex;justify-content:space-between;gap:6px;padding:12px;border:1px solid #1f2230;border-radius:12px}
+    .timeline{position:relative;margin-left:6px;padding-left:28px}
+    .timeline:before{content:\"\";position:absolute;left:12px;top:0;bottom:0;width:2px;background:linear-gradient(var(--accent),transparent)}
+    article{position:relative;padding:12px 12px 12px 16px;border:1px solid #1f2230;border-radius:14px;margin:14px 0;background:rgba(255,255,255,0.015)}
+    article:before{content:\"\";position:absolute;left:-20px;top:20px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px #1b1f2a}
+    footer{color:var(--muted);text-align:center;margin:26px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">ME</div>
+      <div class="id">
+        <h1>Manupati Eshwar</h1>
+        <p>• Aspiring Software Developer • Hanamakonda, India • <a href="mailto:eshwarmanupati@gmail.com">eshwarmanupati@gmail.com</a> • +91 80748 15165 • <a href="https://github.com/Eshwarmanupati">github.com/Eshwarmanupati</a></p>
+        <div class="chips">
+          <span class="chip">Java</span><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">React</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="summary">
+      <h2>Profile</h2>
+      <p>Full-stack developer in training focused on Java, Python, and modern web technologies.</p>
+      <p>Skilled in building responsive MERN applications and AI-assisted tools; seeking opportunities to contribute to real-world projects.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="edu-list">
+        <li class="edu-item">
+          <span>B.Tech in Computer Science</span>
+          <span>Aug 2023 – May 2027 — SR University</span>
+        </li>
+        <li class="edu-item">
+          <span>GPA: 8.3</span>
+          <span>Key Courses: DSA, OOP, DBMS, OS, CN, Web Tech, Python, Java, Data Mining</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article>
+          <h3>Scaler College Hackathon — Developer (V Tools)</h3>
+          <p>Bangalore • May 2025</p>
+          <ul>
+            <li>Developed an AI + Blockchain career platform.</li>
+            <li>Frontend: React, Tailwind, Framer Motion • Backend: Supabase (PostgreSQL).</li>
+            <li>Integrated Ethers.js, MetaMask, IPFS, NFT.Storage, Gemini & OpenAI APIs.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Full-stack Project — Blogging Website (MERN)</h3>
+          <ul>
+            <li>Implemented JWT auth, AWS S3 uploads, real-time WebSocket updates.</li>
+            <li>Stack: React, Tailwind, Node.js, Express, MongoDB.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Frontend Project — ToDo App with Statistics</h3>
+          <ul>
+            <li>Responsive task tracker with filters, stats, and localStorage persistence.</li>
+            <li>Stack: HTML, CSS, JavaScript.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>Blogging Website</b> — <a href="https://github.com/Eshwarmanupati/blogging-website">GitHub</a></li>
+        <li><b>ToDo App with Statistics</b> — <a href="https://github.com/Eshwarmanupati/ToDo-react">GitHub</a></li>
+        <li><b>V Tools (AI + Blockchain Career Platform)</b> — <a href="https://github.com/Eshwarmanupati/gentle-message-stream-52-46-22">GitHub</a></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: Java, Python, JavaScript, TypeScript, SQL</li>
+        <li>Frontend: React, Tailwind CSS, shadcn/ui, Framer Motion</li>
+        <li>Backend: Node.js, Express, PostgreSQL, MongoDB</li>
+        <li>Cloud: AWS (S3, EC2), Docker</li>
+        <li>Blockchain/AI: Ethers.js, MetaMask, IPFS, NFT.Storage, Gemini, Hugging Face, OpenAI APIs</li>
+      </ul>
+    </section>
+
+    <footer>
+      <small>© <span id="y"></span> Manupati Eshwar • Built with HTML & CSS</small>
+    </footer>
+  </div>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
+
